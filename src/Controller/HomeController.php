@@ -2,10 +2,12 @@
 
 namespace App\Controller;
 
+use App\Model\GeneralMessage;
+
 class HomeController
 {
-    public function index(): void
+    public function index(): GeneralMessage
     {
-        echo "Welcome to the home page!";
+        return new GeneralMessage("Hello World");
     }
 }
